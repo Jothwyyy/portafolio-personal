@@ -1,5 +1,16 @@
 @import url("fontawesome-all.min.css");
-@import url("https://fonts.googleapis.com/css?family=Lato:300,400,900");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap");
+
+:root {
+	--bg-main: #0f172a;
+	--bg-surface: #1e293b;
+	--bg-surface-2: #334155;
+	--text-main: #f8fafc;
+	--text-muted: #94a3b8;
+	--accent: #38bdf8;
+	--accent-hover: #0ea5e9;
+	--border-soft: rgba(148, 163, 184, 0.22);
+}
 
 /*
 	Twenty by HTML5 UP
@@ -83,7 +94,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #f3f6fa;
+		background: var(--bg-main);
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -98,8 +109,8 @@ input, select, textarea {
 		}
 
 	body, input, select, textarea {
-		color: #7c8081;
-		font-family: 'Lato', sans-serif;
+		color: var(--text-main);
+		font-family: 'Inter', Arial, sans-serif;
 		font-size: 15pt;
 		font-weight: 300;
 		letter-spacing: 0.025em;
@@ -111,12 +122,13 @@ input, select, textarea {
 		-webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
-		color: #3fb1a3;
+		color: var(--accent);
 		text-decoration: none;
-		border-bottom: dotted 1px;
+		border-bottom: dotted 1px rgba(56, 189, 248, 0.55);
 	}
 
 		a:hover {
+			color: var(--accent-hover);
 			border-bottom-color: transparent;
 		}
 
@@ -165,13 +177,13 @@ input, select, textarea {
 	}
 
 	hr {
-		border-top: solid 1px rgba(124, 128, 129, 0.2);
+		border-top: solid 1px var(--border-soft);
 		border: 0;
 		margin-bottom: 1.5em;
 	}
 
 	blockquote {
-		border-left: solid 0.5em rgba(124, 128, 129, 0.2);
+		border-left: solid 0.5em var(--border-soft);
 		font-style: italic;
 		padding: 1em 0 1em 2em;
 	}
@@ -2104,7 +2116,7 @@ input, select, textarea {
 		}
 
 			table.default tbody tr {
-				border-bottom: solid 1px rgba(124, 128, 129, 0.2);
+				border-bottom: solid 1px var(--border-soft);
 			}
 
 			table.default td {
@@ -2118,8 +2130,8 @@ input, select, textarea {
 			}
 
 			table.default thead {
-				background: #7c8081;
-				color: #fff;
+				background: var(--bg-surface-2);
+				color: var(--text-main);
 			}
 
 /* Button */
@@ -2138,7 +2150,7 @@ input, select, textarea {
 		-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 		background: none;
-		border: solid 1px;
+		border: solid 1px var(--border-soft);
 		border-radius: 0;
 		color: inherit;
 		cursor: pointer;
@@ -2159,8 +2171,8 @@ input, select, textarea {
 		input[type="reset"]:hover,
 		button:hover,
 		.button:hover {
-			background: rgba(188, 202, 206, 0.15);
-			border-color: inherit;
+			background: rgba(148, 163, 184, 0.15);
+			border-color: rgba(148, 163, 184, 0.45);
 		}
 
 		input[type="button"].primary,
@@ -2168,9 +2180,9 @@ input, select, textarea {
 		input[type="reset"].primary,
 		button.primary,
 		.button.primary {
-			background: #83d3c9;
-			border-color: #83d3c9;
-			color: #fff !important;
+			background: var(--accent);
+			border-color: var(--accent);
+			color: #0b1120 !important;
 		}
 
 			input[type="button"].primary:hover,
@@ -2178,8 +2190,9 @@ input, select, textarea {
 			input[type="reset"].primary:hover,
 			button.primary:hover,
 			.button.primary:hover {
-				background: #96dad1 !important;
-				border-color: #96dad1 !important;
+				background: var(--accent-hover) !important;
+				border-color: var(--accent-hover) !important;
+				color: #e0f2fe !important;
 			}
 
 		input[type="button"].fit,
@@ -2212,12 +2225,12 @@ input, select, textarea {
 		}
 
 		.wrapper.style2 {
-			background-color: #83d3c9;
-			background-image: url("images/light-bl.svg"), url("images/light-br.svg");
-			background-position: bottom left, bottom right;
-			background-repeat: no-repeat, no-repeat;
-			background-size: 25em, 25em;
-			color: #fff;
+			background-color: var(--bg-surface);
+			background-image: linear-gradient(135deg, rgba(56, 189, 248, 0.1), rgba(15, 23, 42, 0.92));
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			color: var(--text-main);
 		}
 
 			.wrapper.style2 input[type="button"]:hover,
@@ -2225,7 +2238,7 @@ input, select, textarea {
 			.wrapper.style2 input[type="reset"]:hover,
 			.wrapper.style2 button:hover,
 			.wrapper.style2 .button:hover {
-				background: rgba(255, 255, 255, 0.15) !important;
+				background: rgba(56, 189, 248, 0.16) !important;
 			}
 
 			.wrapper.style2 input[type="button"].primary,
@@ -2233,9 +2246,9 @@ input, select, textarea {
 			.wrapper.style2 input[type="reset"].primary,
 			.wrapper.style2 button.primary,
 			.wrapper.style2 .button.primary {
-				background: #fff;
-				border-color: #fff;
-				color: #83d3c9 !important;
+				background: var(--accent);
+				border-color: var(--accent);
+				color: #0b1120 !important;
 			}
 
 				.wrapper.style2 input[type="button"].primary:hover,
@@ -2243,18 +2256,19 @@ input, select, textarea {
 				.wrapper.style2 input[type="reset"].primary:hover,
 				.wrapper.style2 button.primary:hover,
 				.wrapper.style2 .button.primary:hover {
-					border-color: inherit !important;
-					color: #fff !important;
+					background: var(--accent-hover) !important;
+					border-color: var(--accent-hover) !important;
+					color: #e0f2fe !important;
 				}
 
 		.wrapper.style3 {
-			background: #fff;
-			color: inherit;
+			background: var(--bg-main);
+			color: var(--text-main);
 		}
 
 		.wrapper.style4 {
-			background: #fff;
-			color: inherit;
+			background: var(--bg-surface);
+			color: var(--text-main);
 			padding: 4em;
 		}
 
@@ -2301,9 +2315,11 @@ input, select, textarea {
 	}
 
 	#header {
-		background: #fff;
-		box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.075);
-		color: inherit;
+		background: rgba(15, 23, 42, 0.88);
+		backdrop-filter: blur(8px);
+		-webkit-backdrop-filter: blur(8px);
+		box-shadow: 0 6px 20px rgba(2, 6, 23, 0.35);
+		color: var(--text-main);
 		cursor: default;
 		font-size: 0.8em;
 		left: 0;
@@ -2321,6 +2337,7 @@ input, select, textarea {
 
 			#header h1 span {
 				font-weight: 300;
+				color: var(--text-muted);
 			}
 
 		#header nav {
@@ -2392,7 +2409,9 @@ input, select, textarea {
 						-webkit-transition: all 0.2s ease-in-out;
 						-ms-transition: all 0.2s ease-in-out;
 						transition: all 0.2s ease-in-out;
-						background: rgba(188, 202, 206, 0.15);
+						background: rgba(56, 189, 248, 0.14);
+						border-color: rgba(56, 189, 248, 0.3);
+						color: var(--text-main);
 					}
 
 					#header nav ul li.current > a {
@@ -2411,9 +2430,9 @@ input, select, textarea {
 			-webkit-animation: none;
 			-ms-animation: none;
 			animation: none;
-			background: transparent;
+			background: rgba(15, 23, 42, 0.3);
 			box-shadow: none;
-			color: #fff;
+			color: var(--text-main);
 			padding: 2em 2.5em;
 			position: absolute;
 		}
@@ -2424,7 +2443,7 @@ input, select, textarea {
 			}
 
 				#header.alt nav ul li.active > a, #header.alt nav ul li:hover > a {
-					border: solid 1px;
+					border: solid 1px rgba(248, 250, 252, 0.4);
 				}
 
 /* Dropotron */
@@ -2432,13 +2451,14 @@ input, select, textarea {
 	.dropotron {
 		list-style: none;
 		padding-left: 0;
-		background: #fff;
-		box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.075);
+		background: #0b1220;
+		box-shadow: 0 10px 30px rgba(2, 6, 23, 0.5);
 		line-height: 2.25em;
 		min-width: 13em;
 		padding: 1em 0;
 		text-transform: uppercase;
 		margin-top: calc(-1em + 1px);
+		color: var(--text-main);
 	}
 
 		.dropotron.level-0 {
@@ -2448,7 +2468,7 @@ input, select, textarea {
 		}
 
 			.dropotron.level-0:before {
-				border-bottom: solid 0.5em #fff;
+				border-bottom: solid 0.5em #0b1220;
 				border-left: solid 0.5em transparent;
 				border-right: solid 0.5em transparent;
 				content: '';
@@ -2458,7 +2478,7 @@ input, select, textarea {
 			}
 
 		.dropotron > li {
-			border-top: solid 1px rgba(124, 128, 129, 0.2);
+			border-top: solid 1px var(--border-soft);
 			padding-left: 0;
 		}
 
@@ -2474,8 +2494,8 @@ input, select, textarea {
 			}
 
 			.dropotron > li:hover > a {
-				background: #83d3c9;
-				color: #fff;
+				background: var(--accent);
+				color: #0b1120;
 			}
 
 			.dropotron > li:first-child {
@@ -2526,12 +2546,12 @@ input, select, textarea {
 
 	#banner {
 		background-attachment: scroll, scroll, scroll, fixed;
-		background-color: #645862;
-		background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), url("../../images/banner.jpg");
-		background-position: bottom left, bottom right, top left, top center;
-		background-repeat: no-repeat, no-repeat, repeat, no-repeat;
-		background-size: 25em, 25em, auto, cover;
-		color: #fff;
+		background-color: #0b1120;
+		background-image: linear-gradient(135deg, rgba(15, 23, 42, 0.92), rgba(30, 41, 59, 0.82)), url("images/overlay.png"), url("../../images/banner.jpg");
+		background-position: center, top left, top center;
+		background-repeat: no-repeat, repeat, no-repeat;
+		background-size: cover, auto, cover;
+		color: var(--text-main);
 		cursor: default;
 		padding: 6em 0;
 		text-align: center;
@@ -2546,8 +2566,10 @@ input, select, textarea {
 			-webkit-animation-fill-mode: forwards;
 			-ms-animation-fill-mode: forwards;
 			animation-fill-mode: forwards;
-			background: rgba(52, 27, 43, 0.5);
-			color: #fff;
+			background: rgba(15, 23, 42, 0.6);
+			border: 1px solid rgba(56, 189, 248, 0.25);
+			box-shadow: 0 20px 50px rgba(2, 6, 23, 0.45);
+			color: var(--text-main);
 			display: inline-block;
 			opacity: 0;
 			padding: 3em;
@@ -2575,13 +2597,14 @@ input, select, textarea {
 				}
 
 			#banner .inner p {
+				color: var(--text-muted);
 				letter-spacing: 0.1em;
 				margin: 0;
 				text-transform: uppercase;
 			}
 
 				#banner .inner p a {
-					color: inherit;
+					color: var(--accent);
 					font-weight: 400;
 					text-decoration: none;
 				}
@@ -2605,7 +2628,7 @@ input, select, textarea {
 		}
 
 		#main .sidebar section {
-			border-top: solid 1px rgba(124, 128, 129, 0.2);
+			border-top: solid 1px var(--border-soft);
 			margin: 3em 0 0 0;
 			padding: 3em 0 0 0;
 		}
@@ -2624,12 +2647,12 @@ input, select, textarea {
 
 	#cta {
 		background-attachment: scroll, scroll, scroll, fixed;
-		background-color: #645862;
-		background-image: url("images/light-tl.svg"), url("images/light-tr.svg"), url("images/overlay.png"), url("../../images/banner.jpg");
-		background-position: top left, top right, top left, bottom center;
-		background-repeat: no-repeat, no-repeat, repeat, no-repeat;
-		background-size: 25em, 25em, auto, cover;
-		color: #fff;
+		background-color: #0b1120;
+		background-image: linear-gradient(135deg, rgba(30, 41, 59, 0.92), rgba(15, 23, 42, 0.9)), url("images/overlay.png"), url("../../images/banner.jpg");
+		background-position: center, top left, bottom center;
+		background-repeat: no-repeat, repeat, no-repeat;
+		background-size: cover, auto, cover;
+		color: var(--text-main);
 		padding: 5em;
 		text-align: center;
 	}
@@ -2641,10 +2664,11 @@ input, select, textarea {
 /* Footer */
 
 	#footer {
-		background: #E8EEF4;
-		color: #7c8081;
+		background: #0b1120;
+		color: var(--text-muted);
 		padding: 5em 5em 10em 5em;
 		text-align: center;
+		border-top: 1px solid var(--border-soft);
 	}
 
 		#footer .copyright {
@@ -2653,14 +2677,14 @@ input, select, textarea {
 		}
 
 			#footer .copyright a {
-				color: inherit;
+				color: var(--text-main);
 			}
 
 			#footer .copyright li {
 				display: inline-block;
 				margin-left: 1em;
 				padding-left: 1em;
-				border-left: dotted 1px;
+				border-left: dotted 1px rgba(148, 163, 184, 0.35);
 			}
 
 				#footer .copyright li:first-child {
