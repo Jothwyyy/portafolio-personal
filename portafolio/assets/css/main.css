@@ -1863,15 +1863,6 @@ input, select, textarea {
 		position: relative;
 	}
 
-		.image:before {
-			background: url("images/overlay.png");
-			content: '';
-			height: 100%;
-			left: 0;
-			position: absolute;
-			top: 0;
-			width: 100%;
-		}
 
 		.image.fit {
 			display: block;
@@ -1995,7 +1986,6 @@ input, select, textarea {
 			cursor: default;
 			display: block;
 			margin: 0 0 1.5em 0;
-			opacity: 0.35;
 			text-align: center;
 		}
 
