@@ -1863,6 +1863,14 @@ input, select, textarea {
 		position: relative;
 	}
 
+		.image.main {
+			display: block;
+			margin: 0 0 2em 0;
+			width: 25%;
+			margin: 0 auto;
+			padding-bottom: 1.8em;
+		}
+
 
 		.image.fit {
 			display: block;
