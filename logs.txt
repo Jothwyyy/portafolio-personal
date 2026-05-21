@@ -1,0 +1,88 @@
+commit e917c9a0df4bd7fa777a37c120b7d31ee573f5af
+Author: Jothwyyy <1724110287@utectulancingo.edu.mx>
+Date:   Wed May 20 19:36:38 2026 -0600
+
+    refactor: eliminar imagen del banner principal en index.html
+
+commit f0aae7c8d4fcb0e4f66986cd9689314f8f04a64b
+Author: Jothwyyy <1724110287@utectulancingo.edu.mx>
+Date:   Wed May 20 13:25:29 2026 -0600
+
+    content: agregar plantilla original de html5up.net
+
+commit 35fc6f0eb3b01b72ac25a77a0a29bbf56ff8d666
+Author: 1724110287@utectulancingo.edu.mx <1724110287@utectulancingo.edu.mx>
+Date:   Tue May 19 21:53:03 2026 -0600
+
+    content: agregar imagen de perfil a la pagina principal
+
+commit 81f78c05d3710ef603238006acf09f11ec07e60f
+Author: Jothwyyy <1724110287@utectulancingo.edu.mx>
+Date:   Tue May 19 13:15:29 2026 -0600
+
+    content: traducir pagina de contacto y agregar enlace de linkedin y email
+
+commit 362584d04e865eb42bbd3102b4ecd8e66a06e5fd
+Merge: 91f2038 5acd8f0
+Author: Jothwyyy <1724110287@utectulancingo.edu.mx>
+Date:   Tue May 19 13:03:12 2026 -0600
+
+    content: agregar proyectos de GitHub
+
+commit 91f20389fe76a53de3e3a12d5c6a65b46240a778
+Author: Jothwyyy <1724110287@utectulancingo.edu.mx>
+Date:   Tue May 19 12:59:14 2026 -0600
+
+    style: actualizar imagenes de las tarjetas de proyectos
+
+commit 5acd8f0d7e569e38446014f28b6e69abf2f9baab
+Merge: ab45c8c 801315e
+Author: Leonardo Daniel Granados Santillan <1724110287@utectulancingo.edu.mx>
+Date:   Tue May 19 12:06:28 2026 -0600
+
+    content: actualizar página principal con información del CV
+    
+    content: actualizar página principal con información del CV
+
+commit 3a9bd88a6207d7ecc5c39a84bd0a0cde4f8aa266
+Merge: ab45c8c 801315e
+Author: Jothwyyy <1724110287@utectulancingo.edu.mx>
+Date:   Tue May 19 12:04:24 2026 -0600
+
+    Merge branch 'features'
+
+commit 801315eacafb8895c2c0c4504301bf47157f1a38
+Author: Jothwyyy <1724110287@utectulancingo.edu.mx>
+Date:   Tue May 19 12:03:52 2026 -0600
+
+    content: actualizar página principal con información del CV
+
+commit ab45c8c5d052502b19109cadd8460239570aaf64
+Author: Jothwyyy <1724110287@utectulancingo.edu.mx>
+Date:   Tue May 19 12:02:35 2026 -0600
+
+    docs: agregar curriculum como recurso de la pagina
+
+commit 13f129aad2fee27b11cd578996b63e6ca8fbc728
+Author: Jothwyyy <1724110287@utectulancingo.edu.mx>
+Date:   Tue May 19 11:41:09 2026 -0600
+
+    style: actualizar fuentes y paleta de colores
+
+commit 8504f0880009531c6bbb00f1f5d19baaa7afeeb8
+Author: 1724110287@utectulancingo.edu.mx <1724110287@utectulancingo.edu.mx>
+Date:   Tue May 19 10:32:43 2026 -0600
+
+    docs: agregar auditoria de la plantilla twenty de html5up.bet
+
+commit 1ba3f15735cd3a3f3fe8bc7fa95530336e7fe749
+Author: 1724110287@utectulancingo.edu.mx <1724110287@utectulancingo.edu.mx>
+Date:   Tue May 19 10:21:44 2026 -0600
+
+    fear: Agregar plantilla de html5up.net para el diseño del portafolio personal
+
+commit 088a7acf7f827254a7cd576a5673732b94651b6a
+Author: 1724110287@utectulancingo.edu.mx <1724110287@utectulancingo.edu.mx>
+Date:   Tue May 19 10:19:38 2026 -0600
+
+    Initial commit
