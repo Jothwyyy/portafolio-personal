@@ -20,7 +20,7 @@
         <footer>
             <ul class="buttons stacked">
                 <li><a href="#proyectos" class="button fit scrolly">Ver Proyectos</a></li>
-                <li><a href="assets/docs/LEONARDO%20DANIEL%20GRANADOS%20SANTILLAN%202026%20CV.pdf" class="button fit" target="_blank">Ver CV</a></li>
+                <li><a href="/assets/docs/LEONARDO%20DANIEL%20GRANADOS%20SANTILLAN%202026%20CV.pdf" class="button fit" target="_blank">Ver CV</a></li>
             </ul>
         </footer>
 
@@ -72,7 +72,7 @@
 #banner {
     background-attachment: scroll, scroll, scroll, fixed;
     background-color: #0b1120;
-    background-image: linear-gradient(135deg, rgba(15, 23, 42, 0.92), rgba(30, 41, 59, 0.82)), url("assets/images/overlay.png"), url("../../images/banner.jpg");
+    background-image: linear-gradient(135deg, rgba(15, 23, 42, 0.92), rgba(30, 41, 59, 0.82)), url("/assets/images/overlay.png"), url("/images/banner.jpg");
     background-position: center, top left, top center;
     background-repeat: no-repeat, repeat, no-repeat;
     background-size: cover, auto, cover;
@@ -138,5 +138,23 @@
         #banner .inner footer {
             margin: 2em 0 0 0;
         }
+
+@media screen and (max-width: 1280px) {
+    #banner .inner {
+        width: 42%;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    #banner .inner {
+        width: 58%;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    #banner .inner {
+        width: 74%;
+    }
+}
 
 </style>
