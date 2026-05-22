@@ -4,14 +4,29 @@ const titlePage = "Leonardo Granados | Portafolio Backend";
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{titlePage}</title>
 </head>
 <body class="index is-preload">
-    <slot />
-    
+    <div id="page-wrapper">
+        <slot />
+    </div>
 </body>
 </html>
+
+<style>
+    #page-wrapper {
+        -moz-backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+        -ms-backface-visibility: hidden;
+        backface-visibility: hidden;
+        -moz-transition: -moz-transform 0.5s ease;
+        -webkit-transition: -webkit-transform 0.5s ease;
+        -ms-transition: -ms-transform 0.5s ease;
+        transition: transform 0.5s ease;
+        padding-bottom: 1px;
+    }
+</style>
