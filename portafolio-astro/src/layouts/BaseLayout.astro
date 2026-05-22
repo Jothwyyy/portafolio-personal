@@ -14,13 +14,14 @@ const titlePage = "Leonardo Granados | Portafolio Backend";
     <div id="page-wrapper">
         <slot />
     </div>
-    <script>
-        window.addEventListener("load", () => {
-        setTimeout(() => {
-            document.body.classList.remove("is-preload");
-        }, 100);
-        });
-    </script>
+    <script is:inline src="/assets/js/jquery.min.js"></script>
+    <script is:inline src="/assets/js/jquery.dropotron.min.js"></script>
+    <script is:inline src="/assets/js/jquery.scrolly.min.js"></script>
+    <script is:inline src="/assets/js/jquery.scrollex.min.js"></script>
+    <script is:inline src="/assets/js/browser.min.js"></script>
+    <script is:inline src="/assets/js/breakpoints.min.js"></script>
+    <script is:inline src="/assets/js/util.js"></script>
+    <script is:inline src="/assets/js/main.js"></script>
 </body>
 </html>
 
