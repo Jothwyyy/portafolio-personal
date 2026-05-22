@@ -153,6 +153,11 @@ input, select, textarea {
 			border: 0;
 		}
 
+		section.special,
+			article.special {
+			text-align: center;
+			}
+
 /* Header Special */
 
 	header.special {
