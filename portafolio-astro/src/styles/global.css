@@ -76,6 +76,11 @@ input, select, textarea {
 	appearance: none;
 }
 
+/* Hide navbar panel by default */
+#navPanel, #navButton {
+	display: none;
+}
+
 /* Basic */
 
 	html {
@@ -180,3 +185,82 @@ input, select, textarea {
 		font-style: italic;
 		padding: 1em 0 1em 2em;
 	}
+
+/* Button */
+
+	input[type="button"],
+	input[type="submit"],
+	input[type="reset"],
+	button,
+	.button {
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		-ms-appearance: none;
+		appearance: none;
+		-moz-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+		-webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+		-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+		transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+		background: none;
+		border: solid 1px var(--border-soft);
+		border-radius: 0;
+		color: inherit;
+		cursor: pointer;
+		display: inline-block;
+		font-size: 0.8em;
+		font-weight: 900;
+		letter-spacing: 2px;
+		min-width: 18em;
+		padding: 0 0.75em;
+		line-height: 3.75em;
+		text-align: center;
+		text-decoration: none;
+		text-transform: uppercase;
+	}
+
+		input[type="button"]:hover,
+		input[type="submit"]:hover,
+		input[type="reset"]:hover,
+		button:hover,
+		.button:hover {
+			background: rgba(148, 163, 184, 0.15);
+			border-color: rgba(148, 163, 184, 0.45);
+		}
+
+		input[type="button"].primary,
+		input[type="submit"].primary,
+		input[type="reset"].primary,
+		button.primary,
+		.button.primary {
+			background: var(--accent);
+			border-color: var(--accent);
+			color: #0b1120 !important;
+		}
+
+			input[type="button"].primary:hover,
+			input[type="submit"].primary:hover,
+			input[type="reset"].primary:hover,
+			button.primary:hover,
+			.button.primary:hover {
+				background: var(--accent-hover) !important;
+				border-color: var(--accent-hover) !important;
+				color: #e0f2fe !important;
+			}
+
+		input[type="button"].fit,
+		input[type="submit"].fit,
+		input[type="reset"].fit,
+		button.fit,
+		.button.fit {
+			width: 100%;
+		}
+
+		input[type="button"].small,
+		input[type="submit"].small,
+		input[type="reset"].small,
+		button.small,
+		.button.small {
+			font-size: 0.7em;
+			min-width: 14em;
+			padding: 0.5em 0;
+		}
