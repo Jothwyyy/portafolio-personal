@@ -1,0 +1,63 @@
+---
+import AboutSection from "./AboutSection.astro";
+import TechnologiesSection from "./TechnologiesSection.astro";
+import SkillsSection from "./SkillsSection.astro";
+import ProjectsSection from "./ProjectsSection.astro";
+---
+
+<article id="main">
+  <AboutSection />
+  <TechnologiesSection />
+  <SkillsSection />
+  <ProjectsSection />
+</article>
+
+<style>
+/* Section/Article */
+
+section.special, article.special {
+    text-align: center;
+}
+
+header.major {
+    padding-bottom: 2em;
+}
+
+footer > :last-child {
+    margin-bottom: 0;
+}
+
+footer.major {
+    padding-top: 3em;
+}
+
+/* Main */
+
+#main {
+    background-image: url("images/dark-tl.svg"), url("images/dark-tr.svg"), url("images/dark-bl.svg"), url("images/dark-br.svg");
+    background-position: top left, top right, bottom left, bottom right;
+    background-repeat: no-repeat;
+    background-size: 25em;
+    padding: 7em 0;
+}
+
+    #main > :last-child {
+        margin-bottom: 0;
+    }
+
+    #main .sidebar section {
+        border-top: solid 1px var(--border-soft);
+        margin: 3em 0 0 0;
+        padding: 3em 0 0 0;
+    }
+
+        #main .sidebar section:first-child {
+            border-top: 0;
+            padding-top: 0;
+            margin-top: 0;
+        }
+
+body.index #main {
+    padding-top: 5em;
+}
+</style>
