@@ -1,5 +1,7 @@
 ---
 import "../styles/global.css";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
 const titlePage = "Leonardo Granados | Portafolio Backend";
 ---
 
@@ -12,7 +14,9 @@ const titlePage = "Leonardo Granados | Portafolio Backend";
 </head>
 <body class="index is-preload">
     <div id="page-wrapper">
+        <Navbar />
         <slot />
+        <Footer />
     </div>
     <script is:inline src="/assets/js/jquery.min.js"></script>
     <script is:inline src="/assets/js/jquery.dropotron.min.js"></script>
